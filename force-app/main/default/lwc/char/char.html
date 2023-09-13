@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="LibsChartjs" icon-name="custom:custom19">
+        <div>totalAmount:{totalAmount}</div>
+        
+        <div class="chart slds-var-m-around_medium" lwc:dom="manual"></div>
+        <c-view-source source="lwc/libsChartjs" slot="footer">
+            Use Chart.js in a Lightning Web component.
+        </c-view-source>
+        <lightning-button label="Save as Image"
+        title="Save as Image" onclick={saveImage}></lightning-button>
+    </lightning-card>
+</template>
